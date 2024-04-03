@@ -46,17 +46,18 @@ const Main = () => {
     "Estágio Curricular Obrigatório": { ch: 360, r: true },
   };
   
-  function formaLista () {
-    const elemento = grade_nova.map((item, ind) => (item))
-    return <li>{elemento}</li>
+  function formaLista() {
+    const lista = Object.entries(grade_nova);
+    return (
+      <ul className="main">
+        {lista.map(([disciplina, detalhes]) => (
+          <li key={disciplina}>
+            {disciplina}: {detalhes.ch}
+          </li>
+        ))}
+      </ul>
+    );
   }
-
-  return (
-    <div className="main">
-      <h1>Grade Nova:</h1>
-      <ul className="lista">{formaLista()}</ul>
-    </div>
-  );
-};
+}
 
 export default Main;
