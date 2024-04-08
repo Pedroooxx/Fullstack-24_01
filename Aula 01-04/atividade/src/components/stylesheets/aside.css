@@ -1,6 +1,7 @@
 .aside {
-    background-color: rgb(255, 187, 0);
-    height: 1000px;
+    background-color: rgb(109, 109, 109);
+    height: fit-content;
+    min-height: 1000px;
     width: 30%;
     display: flex;
     align-content: center;

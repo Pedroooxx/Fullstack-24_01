@@ -49,15 +49,25 @@ const Main = () => {
   function formaLista() {
     const lista = Object.entries(grade_nova);
     return (
-      <ul className="main">
-        {lista.map(([disciplina, detalhes]) => (
-          <li key={disciplina}>
-            {disciplina}: {detalhes.ch}
+      <ul className="lista">
+        {lista.map(([disciplina, info]) => (
+          <li
+            key={disciplina}
+            className={info.r ? "remota" : "itemLista"}
+          >
+            {disciplina} - Carga horária: {info.ch} horas
           </li>
         ))}
       </ul>
     );
   }
-}
+
+  return (
+    <div className="main">
+      <h1>Grade Nova:</h1>
+      <div>{formaLista()}</div>
+    </div>
+  );
+};
 
 export default Main;
