@@ -51,10 +51,7 @@ const Main = () => {
     return (
       <ul className="lista">
         {lista.map(([disciplina, info]) => (
-          <li
-            key={disciplina}
-            className={info.r ? "remota" : "itemLista"}
-          >
+          <li key={disciplina} className={info.r ? "remota" : "itemLista"}>
             {disciplina} - Carga horária: {info.ch} horas
           </li>
         ))}
