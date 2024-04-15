@@ -38,8 +38,8 @@ const Main = () => {
   //Exercício Cria Lista -------
   const [listaElementos, setListaElementos] = useState([]);
 
-  const parBackgroundColor = "purple";
-  const imparBackgroundColor = "rgb(187, 144, 3)";
+  const parBackgroundColor = "rgb(0, 199, 33)";
+  const imparBackgroundColor = "rgb(0, 114, 19)";
 
   const Item = ({ texto, index }) => {
     const backgroundColor = index % 2 === 0 ? parBackgroundColor : imparBackgroundColor;
@@ -65,7 +65,7 @@ const Main = () => {
       <button className="botaoValidar" onClick={(ev) => validaElemento()}> Validar Texto </button>
       <input className="elementoValidar" placeholder=" Insira o Texto Aqui "
         value={inputValue} onChange={handleInputChange}></input>
-      <h2>{mensagemValidacao}</h2>
+      <h2 className="mensagemValidacao">{mensagemValidacao}</h2>
 
       <button className="botaoLista" onClick={(ev) => adicionaElemento()}> Adicionar a Lista </button>
       <input className="adicionaElemento" placeholder=" Insira o Texto Aqui "

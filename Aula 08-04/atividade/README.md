@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Projeto React com Funcionalidades Específicas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto React que implementa uma série de funcionalidades específicas em um componente principal. O projeto foi inicializado usando Create React App (CRA).
 
-## Available Scripts
+## Funcionalidades Implementadas
 
-In the project directory, you can run:
+### 1. Botão de Alteração de Visibilidade
 
-### `npm start`
+- Um botão que ao ser clicado altera a visibilidade de outro elemento ao seu lado, fazendo-o aparecer e desaparecer.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Validação de Input
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Um input com o seu valor mapeado para uma variável de estado e validação do valor. Uma mensagem de erro é apresentada ao lado do elemento se houver menos de 3 caracteres no input.
 
-### `npm test`
+### 3. Inserção de Elemento ao Pressionar Enter
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Um input que, ao ser preenchido e a tecla Enter ser pressionada, insere um novo elemento `li` dentro de um elemento `ul`.
 
-### `npm run build`
+### 4. Separação do Conteúdo do Elemento LI em um Componente Específico
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- O conteúdo do elemento `li` gerado foi separado em um componente específico chamado `Item`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. Passagem de Cor de Fundo para Elementos LI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Um valor de propriedade é passado para o componente `Item`, indicando uma cor de fundo diferente para elementos `li` de índice par ou ímpar.
 
-### `npm run eject`
+## Como Executar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone este repositório para sua máquina local.
+2. No diretório raiz do projeto, execute `npm install` para instalar as dependências.
+3. Após a instalação das dependências, execute `npm start` para iniciar o servidor de desenvolvimento.
+4. Abra o navegador e acesse `http://localhost:3000` para visualizar o projeto em execução.
